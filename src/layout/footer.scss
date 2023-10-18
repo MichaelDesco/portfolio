@@ -1,0 +1,34 @@
+.footer{
+    height: 20vh;
+    background-color: #52796F;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    p{
+        color: white;
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+    ul{
+        display: flex;
+        justify-content: space-around;
+        list-style-type: none;
+        margin-left: 0;
+        li{
+            padding-top: 0.5vh;
+            padding-bottom: 0.5vh;
+        }
+        li:not(:last-of-type){
+            border-right: 2px solid white;
+            padding-right: 1vw;
+        }
+        li:not(:first-of-type){
+            padding-left: 1vw;
+        }
+        .footerLink{
+            color: white;
+            font-size: 1.2rem;
+        }
+    }
+}

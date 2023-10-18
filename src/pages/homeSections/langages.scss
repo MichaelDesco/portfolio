@@ -1,0 +1,134 @@
+.langages {
+    position: relative;
+    height: 70vh;
+    background-image: url(../../../public/images/colorkit2reverse.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .langageLv {
+        width: 70vw;
+        height: 48vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding-top: 4vh;
+        h3 {
+            position: absolute;
+            top: 7vh;
+            left: 6vw;
+            font-size: 2rem;
+        }
+
+        .langage {
+            padding-top: 4vh;
+            position: relative;
+            display: flex;
+            justify-content: center;
+
+            img {
+                height: 8vh;
+                margin-right: 2vw;
+            }
+
+            p { 
+                position: relative;
+                padding-top: 2vh;
+                font-weight: bold;
+                font-size: 1.8rem;
+                color: white;
+                text-shadow: 1px 1px 2px black;
+                width: 50vw;
+                position: relative;
+                border-bottom: 15px solid white;
+            }
+
+            p::before {
+                content: '';
+                position: absolute;
+                bottom: -15px;
+                left: 0;
+                width: var(--width-percentage, 0);
+                height: 15px;
+                /* Épaisseur du niveau */
+                background-color: #52796F;
+                transition: width 0.5s;
+                /* Durée de l'animation */
+                z-index: 99;
+            }
+        }
+    }
+}
+
+.transition2 {
+    position: relative;
+    height: 30vh;
+    border-top: 8px solid #3abeff;
+    border-bottom: 8px solid #3abeff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    p{
+        font-size: 1.5rem;
+        line-height: 30px;
+        color: #52796F;
+        font-weight: bold;
+        text-shadow: 1px 1px 1px black;
+        span{
+            color: #E9C46A;
+            font-size: 1.7rem;
+            position: absolute;
+            bottom: 90%;
+        }
+    }
+    .transition-paragraph {
+        width: 70%;
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+        bottom: 50%;
+        right: 50%;
+        transform: translate(50%, 50%);
+        transition: opacity 2s ease-in-out;
+    }
+    
+    .transition-paragraph.show {
+      opacity: 1;
+      visibility: visible;
+      position: absolute;
+      bottom: 50%;
+      right: 50%;
+      transform: translate(50%, 50%);
+      animation: fadeIn 2s forwards; /* Animation d'entrée */
+    }
+    
+    .transition-paragraph.fade-out {
+      opacity: 0;
+      visibility: hidden;
+      animation: fadeOut 2s forwards; /* Animation de sortie */
+    }
+    
+    @keyframes fadeOut {
+      from {
+        opacity: 1;
+        visibility: visible;
+      }
+      to {
+        opacity: 0;
+        visibility: hidden;
+      }
+    }
+    
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+}

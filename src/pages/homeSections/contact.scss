@@ -1,0 +1,205 @@
+.contact{
+    position: relative;
+    height: 105vh;
+    display: flex;
+    align-items: center;
+    background-image: url('../../../public/images/colorkit2.png');
+    padding-top: 12vh;
+    h3{
+        position: absolute;
+        top: 12vh;
+        left: 6vw;
+        font-size: 2rem;
+        color: #E9C46A;
+    }
+    form{
+        background-color: rgba($color: white, $alpha: 0.5);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+        height: 80vh;
+        width: 60vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        border: 0.5px solid black;
+        border-radius: 20px;
+        padding-bottom: 5vh;
+        .contactInfo{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 70vw;
+            .contactId{
+                width: 50vw;
+                display: flex;
+                justify-content: space-between;
+                .contactLastname{
+                    width: 20vw;
+                    display: flex;
+                    flex-direction: column;
+                    label, input{
+                        height: 4vh;
+                    }
+                }
+                .contactFirstname{
+                    width: 20vw;
+                    display: flex;
+                    flex-direction: column;
+                    label, input{
+                        height: 4vh;
+                    }
+                }
+            }
+            .contactTool{
+                margin-top: 3vh;
+                width: 50vw;
+                display: flex;
+                justify-content: space-between;
+                .contactMail{
+                    width: 20vw;
+                    display: flex;
+                    flex-direction: column;
+                    label, input{
+                        height: 4vh;
+                    }
+                }
+                .contactTel{
+                    width: 20vw;
+                    display: flex;
+                    flex-direction: column;
+                    label, input{
+                        height: 4vh;
+                    }
+                }
+            }
+        }
+        .contactContenu{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            height: 40vh;
+            width: 70vw;
+            .contactObject{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                label, input{
+                    width: 50vw;
+                    height: 4vh;
+                }   
+            }
+            .contactMessage{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                label, textarea{
+                    width: 50vw;
+                }
+                label{
+                    height: 4vh;
+                }
+                textarea{
+                    height: 18vh;
+                    resize: none;
+                }
+            }
+        }
+        .contactSubmit{
+            width: 50vw;
+            input{
+                margin-right: 0.5vw;
+                float: left;
+            }
+            .btnSendEmail{
+                position: absolute;
+                bottom: 3vh;
+                left: 30vw;
+                transform: translateX(-50%);
+                padding: 0.3rem 1rem;
+                border-radius: 15px;
+                background-color: #3abeff;
+                border: 2px solid #E0FF4F;
+                color: white;
+                font-size: 1rem;
+            }
+        }
+    }
+}
+.transition4{
+    position: relative;
+    height: 15vh;
+    border-top: 8px solid #3abeff;
+    border-bottom: 8px solid #E0FF4F;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    p{
+        font-size: 1.5rem;
+        line-height: 30px;
+        color: #52796F;
+        font-weight: bold;
+        text-shadow: 1px 1px 1px black;
+        text-align: center;
+        span{
+            color: #E9C46A;
+            font-size: 1.3rem;
+            position: absolute;
+            right: 5%;
+        }
+    }
+    .transition-paragraph {
+        width: 100%;
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+        bottom: 50%;
+        right: 50%;
+        transform: translate(50%, 50%);
+        transition: opacity 2s ease-in-out;
+    }
+    
+    .transition-paragraph.show {
+      opacity: 1;
+      visibility: visible;
+      position: absolute;
+      bottom: 50%;
+      right: 50%;
+      transform: translate(50%, 50%);
+      animation: fadeIn 2s forwards; /* Animation d'entrée */
+    }
+    
+    .transition-paragraph.fade-out {
+      opacity: 0;
+      visibility: hidden;
+      animation: fadeOut 2s forwards; /* Animation de sortie */
+    }
+    
+    @keyframes fadeOut {
+      from {
+        opacity: 1;
+        visibility: visible;
+      }
+      to {
+        opacity: 0;
+        visibility: hidden;
+      }
+    }
+    
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+}

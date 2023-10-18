@@ -1,0 +1,73 @@
+@font-face {
+    font-family: "Londrina";
+    src: url("../public/fonts/Londrina_Solid/LondrinaSolid-Regular.ttf");
+}
+h1, .btnContact, .btnMenu, h3, h4, .titleTransition, .autorTransition .cvDownload, .footerLink, button, label, .btnBackCard{
+    font-family: "Londrina";
+    text-shadow: 1px 1px 3px black;
+    letter-spacing: 1.8px;
+}
+label{
+    color: white;
+}
+input, textarea{
+    border: none;
+}
+h3,h4, .titleTransition{
+    color: #52796F;
+}
+h3{
+    font-size: 1.5rem;
+}
+h4{
+    font-size: 2rem;
+}
+
+@font-face {
+    font-family: "Spartan";
+    src: url("../public/fonts/League_Spartan/LeagueSpartan-VariableFont_wght.ttf");
+}
+h2, p, .langage, .transitionParagraph{
+    font-family: "Spartan";
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Largeur de la barre de défilement */
+::-webkit-scrollbar {
+    display: none;   
+}
+
+// ANIMATION TEXT TRANSITION 
+.mot{
+    animation: color-animation 4s linear infinite;
+}
+.mot1{
+    --color-1: #E0FF4F;
+    --color-2: #52796F;
+    --color-3: #E9C46A;
+}
+.mot2{
+    --color-1: #3abeff;
+    --color-2: #E0FF4F;
+    --color-3: #52796F;
+}
+.mot3{
+    --color-1: #E9C46A;
+    --color-2: #3abeff;
+    --color-3: #E0FF4F;
+}
+@keyframes color-animation {
+    0%    {color: var(--color-1)}
+    32%   {color: var(--color-1)}
+    33%   {color: var(--color-2)}
+    65%   {color: var(--color-2)}
+    66%   {color: var(--color-3)}
+    99%   {color: var(--color-3)}
+    100%  {color: var(--color-1)}
+}

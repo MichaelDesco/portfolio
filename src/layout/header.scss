@@ -1,0 +1,62 @@
+.headerTop{
+    height: 20vh;
+    background-color: #52796F;
+    display: flex;
+    align-items: center;
+    position: relative;
+    color: white;
+
+    img{
+        height: 18vh;
+        padding-left: 10vw;
+        margin-right: 2vw;
+
+    }
+
+    h2 {
+        position: relative;
+        text-shadow: -1px -0.5px 0.1px #E0FF4F;
+    }
+    
+    h2::after {
+        content: "";
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        border-bottom: 4px solid #E0FF4F; /* Couleur et épaisseur du surlignage */
+         /* Crée une courbe */
+        animation: underline 1s linear forwards; /* Animation du soulignage */
+    }
+    
+    @keyframes underline {
+        0% {
+            width: 0;
+        }
+        50% {
+            width: 50%;
+            transform: scaleY(1.5);
+        }
+        100% {
+            width: 100%;
+            transform: scaleY(1);
+        }
+    }
+
+    .btnContact{
+        height: 5vh;
+        position: absolute;
+        right: 10vw;
+        padding: 0.3rem 0.5rem;
+        border: 2px solid #E0FF4F;
+        border-radius: 1rem;
+        text-decoration: none;
+        font-weight: bolder;
+        font-size: large;
+        background-color: #3abeff;
+        color: white;
+        overflow: hidden;
+    }
+}
+    

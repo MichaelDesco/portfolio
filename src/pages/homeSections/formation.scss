@@ -1,0 +1,91 @@
+.formation{
+    height: 75vh;
+    background-image: url(../../../public/images/colorkit2reverse.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    .parcours{
+        height: 75vh;
+        width: 76vw;
+        margin-right: auto;
+        margin-left: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .introParcours{
+            padding-top: 5vh;
+            height: 55vh;
+            width: 45vw;
+            background-color: white;
+            box-shadow: 3px 5px 8px black;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            h3{
+                position: absolute;
+                top: 2vh;
+                left: 2vw;
+            }
+            .experience{
+                display: flex;
+                justify-content: center;
+                width: 45vw;
+                img{
+                    height: 5vh;
+                    width: 7vw;
+                    margin-right: 2vw;
+                }
+                .experienceInfo{
+                    width: 30vw;
+                    p:first-of-type{
+                        color: #52796F;
+                        font-weight: bold;
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+        }
+        .cvParcours{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            height: 55vh;
+            width: 25vw;
+            background-color: white;
+            box-shadow: 3px 5px 8px black;
+            img{
+                box-shadow: 1px 1px 3px black;
+                width: 14vw;
+            }
+            .cvDownload{
+                background-color: #E0FF4F;
+                color: #52796F;
+                border: 2px solid #3abeff;
+                border-radius: 10px;
+                text-decoration: none;
+                text-shadow: 0.5px 0.5px 1px black;
+                padding: 0.1rem 0.5rem;
+            }
+        }
+    }
+}
+.objectif{
+    height: 30vh;
+    padding: 5vh 0;
+    border-top: 8px solid #3abeff;
+    border-bottom: 8px solid #3abeff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 5px 5px 50px black;
+    p{
+        font-size: 2rem;
+        font-weight: bold;
+        text-shadow: 0.5px 0.5px 1px black;
+    }
+}

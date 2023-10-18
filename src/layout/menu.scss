@@ -1,0 +1,41 @@
+.navHeader {
+    position: relative;
+    height: 5vh;
+    background-color: #E9C46A;
+    box-shadow: 0 2px 5px black;
+
+    ul {
+        height: 5vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        list-style-type: none;
+        margin-left: 0;
+
+        li {
+            .btnMenu {
+                text-decoration: none;
+                font-weight: bolder;
+                font-size: 1.4rem;
+                color: white;
+            }
+        }
+    }
+
+    .fa-solid {
+        display: none;
+        position: absolute;
+        right: 1vw;
+        top: 45vh;
+        font-size: 5rem;
+        color: #3abeff;
+        text-shadow: 1px 1px 2px black;
+    }
+
+    &.sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 100;
+    }
+}

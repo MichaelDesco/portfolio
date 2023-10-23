@@ -12,7 +12,32 @@
         margin-right: 2vw;
 
     }
-
+    .headerNameLink{
+        display: flex;
+        align-items: center;
+        margin-bottom: 2vh;
+        .fa-linkedin{
+            height: 4vh;
+            margin-left: 1vw;
+            color: #3abeff;
+        }
+        .fa-github{
+            height: 4vh;
+            margin-left: 1vw;
+            color: #3abeff;
+        }
+        .fa-discord{
+            height: 4vh;
+            margin-left: 1vw;
+            color: #3abeff;
+        }
+        .fa-users{
+            height: 3.5vh;
+            margin-left: 1vw;
+            color: #3abeff;
+        }
+    }
+    
     h2 {
         position: relative;
         text-shadow: -1px -0.5px 0.1px #E0FF4F;
@@ -29,7 +54,6 @@
          /* Crée une courbe */
         animation: underline 1s linear forwards; /* Animation du soulignage */
     }
-    
     @keyframes underline {
         0% {
             width: 0;

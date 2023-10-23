@@ -1,4 +1,8 @@
 import "./header.scss";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLinkedin , faGithub, faDiscord } from "@fortawesome/free-brands-svg-icons";
+import { faUsers } from "@fortawesome/free-solid-svg-icons";
+
 
 const Header = () => {
     return (
@@ -6,7 +10,13 @@ const Header = () => {
             <div className="headerTop">
                 <img src="../images/avatar.png" alt="" />
                 <div className="headerTitle">
-                    <h1>Descorcier Michaël</h1>
+                    <div className="headerNameLink">
+                        <h1>Descorcier Michaël</h1>
+                        <a href="https://www.linkedin.com/in/michael-descorcier-40568a84/"><FontAwesomeIcon icon={faLinkedin} /></a>
+                        <a href="https://github.com/MichaelDesco"><FontAwesomeIcon icon={faGithub} /></a>
+                        <a href="https://discord.gg/xCNP9ZKe"><FontAwesomeIcon icon={faDiscord} /></a>
+                        <a href="https://teams.live.com/l/invite/FEA02ekIpBnM_IatwE"><FontAwesomeIcon icon={faUsers} /></a>
+                    </div>
                     <h2>Développeur d'application Web & Mobile</h2>
                 </div>
                 <a href="#contact" className="btnContact">Contactez-moi</a>

@@ -16,6 +16,7 @@
         flex-wrap: wrap;
         // justify-content: space-around;
         padding-top: 4vh;
+        padding-right: 2vw;
         h3{
             position: absolute;
             top: 7vh;
@@ -23,41 +24,48 @@
             font-size: 2rem;
         }
         .technologie {
-            padding-top: 3vh;
-            position: relative;
+          padding-top: 3vh;
+          position: relative;
+          display: flex;
+
+
+          .logoTechno {
             display: flex;
             justify-content: center;
-
-            img {
-                height: 8vh;
-                margin-right: 8vw;
+            align-items: end;
+            height: 8vh;
+            width:8vw;
+            img{
+              height: 7vh;
             }
+          }
 
-            p { 
-                position: relative;
-                padding-top: 1vh;
-                font-weight: bold;
-                font-size: 1.6rem;
-                color: white;
-                text-shadow: 1px 1px 2px black;
-                width: 20vw;
-                position: relative;
-                border-bottom: 15px solid white;
-            }
+          p { 
+              position: relative;
+              padding-top: 2.5vh;
+              margin-right: 2vw;
+              font-weight: bold;
+              font-size: 1.6rem;
+              color: white;
+              text-shadow: 1px 1px 2px black;
+              width: 20vw;
+              position: relative;
+              border-bottom: 15px solid white;
+          }
 
-            p::before {
-                content: '';
-                position: absolute;
-                bottom: -15px;
-                left: 0;
-                width: var(--width-percentage, 0);
-                height: 15px;
-                /* Épaisseur du niveau */
-                background-color: #52796F;
-                transition: width 0.5s;
-                /* Durée de l'animation */
-                z-index: 99;
-            }
+          p::before {
+              content: '';
+              position: absolute;
+              bottom: -15px;
+              left: 0;
+              width: var(--width-percentage, 0);
+              height: 15px;
+              /* Épaisseur du niveau */
+              background-color: #52796F;
+              transition: width 0.5s;
+              /* Durée de l'animation */
+              z-index: 99;
+          }
         }
     }
 }

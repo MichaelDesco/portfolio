@@ -115,7 +115,9 @@ const Technologies = () => {
                     <h3>Environnement et outils de développement</h3>
                     {technologies.map((technologie, index) => (
                         <div className="technologie" key={index} id={`technologie-${index}`}>
-                            <img src={`./images/${technologie.name.toLowerCase()}.png`} alt="" />
+                            <div className='logoTechno'>
+                                <img src={`./images/${technologie.name.toLowerCase()}.png`} alt="" />
+                            </div>
                             <p className='name'>{technologie.name}</p>
                         </div>
                     ))}

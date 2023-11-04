@@ -1,21 +1,55 @@
 import React, { useRef, useState, useEffect, useMemo } from 'react';
 import emailjs from '@emailjs/browser';
 import { Link } from "react-router-dom";
+import Swal from 'sweetalert2'
+import withReactContent from 'sweetalert2-react-content'
 
 import './contact.scss';
 
+
+
 const Contact = () => {
+    const MySwal = withReactContent(Swal)
     const form = useRef();
+
+    // const sendEmail = (e) => {
+    //     e.preventDefault();
+    //   emailjs.sendForm('service_fyhkjja', 'template_whm6imh', form.current, 'nwFxu-xv-hgOKw4NU')
+    //     .then((result) => {
+    //         MySwal.fire({
+    //             title: <p>Merci, votre message a bien était envoyée.</p>,
+    //             icon: success,
+    //             showConfirmButton: true,
+    //             confirmButtonText: "OK"
+    //           }).then(() => {
+    //             console.log(result.text);
+    //           })
+    //     }, (error) => {
+    //         console.log(error.text);
+    //     });
+    // };
 
     const sendEmail = (e) => {
         e.preventDefault();
-      emailjs.sendForm('service_fyhkjja', 'template_whm6imh', form.current, 'nwFxu-xv-hgOKw4NU')
-        .then((result) => {
-            console.log(result.text);
-        }, (error) => {
-            console.log(error.text);
-        });
+    
+        emailjs.sendForm('service_fyhkjja', 'template_whm6imh', form.current, 'nwFxu-xv-hgOKw4NU')
+            .then((result) => {
+                MySwal.fire({
+                    title: <p>Merci, votre message a bien été envoyé.</p>,
+                    icon: 'success', // Corrigé de success à 'success' (chaîne)
+                    showConfirmButton: true,
+                    confirmButtonText: "OK"
+                }).then(() => {
+                    console.log(result.text);
+                    // Efface les champs du formulaire après une soumission réussie
+                    form.current.reset();
+                });
+            })
+            .catch((error) => {
+                console.error(error.text);
+            });
     };
+    
 
     const paragraphs = useMemo(() => [
         `"Ce que nous savons est une goutte d'eau, ce que nous ignorons est l'océan."<br />

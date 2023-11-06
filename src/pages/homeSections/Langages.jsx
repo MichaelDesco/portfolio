@@ -10,7 +10,7 @@ const Langages = () => {
   ]);
 
   useEffect(() => {
-    const langagesContainer = document.getElementById('langageLv');
+    // const langagesContainer = document.getElementById('langageLv');
 
     function handleScroll() {
       const windowHeight = window.innerHeight;
@@ -22,8 +22,7 @@ const Langages = () => {
         const langageRect = langageElement.getBoundingClientRect();
 
         if (
-          langageRect.top <= windowHeight &&
-          langageRect.bottom >= 0
+          langageRect.top <= windowHeight && langageRect.bottom >= 0
         ) {
           // Calculez la largeur en pourcentage en fonction du niveau
           const widthPercentage = `${langage.level}%`;

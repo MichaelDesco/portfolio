@@ -32,8 +32,8 @@ const Formation = () => {
                     </div>
                     <div className='cvParcours'>
                         <h3>Mon CV</h3>
-                        <img src="./images/michaelDescorcierCV.jpg" alt="" />
-                        <a className='cvDownload' href="https://drive.usercontent.google.com/download?id=1SItDxcf1wkb-5AklRg9IdMRcIih86AUe&export=download&authuser=0&confirm=t&uuid=3fc10ca3-03fc-4291-8459-3c98f10797e5&at=APZUnTV5PDLZo0lRwUVQBTz-Mcr-:1698155470235">Télécharger</a>
+                        <img src="./images/cvDescoMike.jpg" alt="" />
+                        <a className='cvDownload' href="https://drive.google.com/file/d/1w_7mOD_LHHPsxSlnakHR5259tlC4ZMir/view?usp=drive_link">Télécharger</a>
                     </div>
                 </div>
             </div>

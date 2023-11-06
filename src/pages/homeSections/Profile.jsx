@@ -1,15 +1,18 @@
 import './profile.scss'
 
+
+
+
 const Profile = () => {
     return (
         <>
             <div className="profile">
                 <div className='apropos'>
                     <h3>A propos de moi</h3>
-                    <p>Bonjour, je suis Michaël Descorcier, développeur web junior tout récemment diplômé.</p>
-                    <p>Mes expériences professionnelles variées, allant de la construction à l'aéronautique, m'ont dotées d'une précieuse capacité d'adaptation, de résolution de défis complexes et de travail en équipe. Cette polyvalence et ma passion pour les nouvelles technologies depuis l'adolescence, m'ont naturellement orienté vers la programmation.</p>
-                    <p>Je souhaite consacrer mon énergie à contribuer au développement de solutions digitales ayant un impact concret sur notre quotidien. Cette aventure passionnante dans un domaine en constante mutation, qui requiert une formation continue et met en avant la recherche de solutions, constitue une grande source de motivation et d'intérêt pour moi.</p>
-                    <p>Certes, je suis un développeur web débutant avec peu d'expérience professionnelle dans le secteur, mais je suis passionné par ce métier et impatient de relever de nouveaux défis, de m'épanouir au sein d'équipes de développeurs, et de participer à cette passionnante exploration numérique.</p>
+                    <p>En reconversion depuis septembre 2022 dans le développement web.</p>
+                    <p>Je me suis formé à La Piscine à Mérignac, Gironde où j'ai acquis les bases pour concevoir des sites web visuellement attrayants, fonctionnels et gérer les données.</p>
+                    <p>Ma première expérience a été le développement d'un site de gestion comptable, confirmant ma capacité d'adaptation humaine et technique.</p>
+                    <p>Bien que débutant, ma passion pour ce métier me pousse à relever de nouveaux défis et à explorer le monde numérique avec enthousiasme.</p>
                 </div>
             </div>
             <div className="actuellement">

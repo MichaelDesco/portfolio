@@ -1,5 +1,5 @@
 .headerTop{
-    height: 20vh;
+    height: 25vh;
     background-color: #52796F;
     display: flex;
     align-items: center;
@@ -7,7 +7,7 @@
     color: white;
 
     img{
-        height: 18vh;
+        height: 24vh;
         padding-left: 10vw;
         margin-right: 2vw;
 
@@ -39,48 +39,39 @@
     }
     
     h2 {
+        overflow: hidden;
+        white-space: nowrap;
         position: relative;
-        text-shadow: -1px -0.5px 0.1px #E0FF4F;
+        animation: typing 1s steps(24);
+    }
+
+    @keyframes typing {
+        from{width: 0;}
+        to {width: 100%;}
     }
     
     h2::after {
         content: "";
         position: absolute;
-        bottom: -5px;
-        left: 0;
-        width: 100%;
-        height: 2px;
-        border-bottom: 4px solid #E0FF4F; /* Couleur et épaisseur du surlignage */
-         /* Crée une courbe */
-        animation: underline 1s linear forwards; /* Animation du soulignage */
-    }
-    @keyframes underline {
-        0% {
-            width: 0;
-        }
-        50% {
-            width: 50%;
-            transform: scaleY(1.5);
-        }
-        100% {
-            width: 100%;
-            transform: scaleY(1);
-        }
+        display: block;
+        height: 70%;
+        width:2px;
+        background: #dadada;
+        right: 0;
+        top: 15%;
+        animation: cursor 1s infinite;
     }
 
-    .btnContact{
-        height: 5vh;
-        position: absolute;
-        right: 10vw;
-        padding: 0.3rem 0.5rem;
-        border: 2px solid #E0FF4F;
-        border-radius: 1rem;
-        text-decoration: none;
-        font-weight: bolder;
-        font-size: large;
-        background-color: #3abeff;
-        color: white;
-        overflow: hidden;
+    @keyframes cursor {
+      0% {
+        opacity: 1;
+      }  
+      50% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
     }
 }
     

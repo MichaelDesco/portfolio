@@ -16,14 +16,14 @@
         flex-direction: column;
         justify-content: center;
         padding-top: 3vh;
-        padding-left: 6vw;
-        padding-right: 6vw;
+        padding-left: 4vw;
+        padding-right: 4vw;
         background-color: white;
-        height: 55vh;
-        width: 76vw;
+        height: 50vh;
+        width: 80vw;
         h3{
             position: absolute;
-            top: 2vh;
+            top: 6vh;
             left: 3vw;
         }
         p{
@@ -35,8 +35,7 @@
     }
 }
 .actuellement{
-    height: 30vh;
-    padding: 5vh 0;
+    height: 25vh;
     border-top: 8px solid #E0FF4F;
     border-bottom: 8px solid #E0FF4F;
     display: flex;

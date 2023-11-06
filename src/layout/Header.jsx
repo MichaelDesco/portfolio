@@ -11,13 +11,13 @@ const Header = () => {
                 <img src="../images/avatar.png" alt="" />
                 <div className="headerTitle">
                     <div className="headerNameLink">
-                        <h1>Descorcier Michaël</h1>
+                        <h1><span>Bonjour, </span>je suis Descorcier Michaël</h1>
                         <a href="https://www.linkedin.com/in/michael-descorcier-40568a84/"><FontAwesomeIcon icon={faLinkedin} /></a>
                         <a href="https://github.com/MichaelDesco"><FontAwesomeIcon icon={faGithub} /></a>
                         <a href="https://discord.gg/xCNP9ZKe"><FontAwesomeIcon icon={faDiscord} /></a>
                         <a href="https://teams.live.com/l/invite/FEA02ekIpBnM_IatwE"><FontAwesomeIcon icon={faUsers} /></a>
                     </div>
-                    <h2>Développeur d'application Web & Mobile</h2>
+                    <h2>DÉVELOPPEUR D'APPLICATION WEB</h2>
                 </div>
                 <a href="#contact" className="btnContact">Contactez-moi</a>
             </div>

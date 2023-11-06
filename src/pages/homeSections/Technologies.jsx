@@ -15,7 +15,7 @@ const Technologies = () => {
         { name: 'Azure', level: 50 },
     ]);
     useEffect(() => {
-        const technologiesContainer = document.getElementById('technologieLv');
+        // const technologiesContainer = document.getElementById('technologieLv');
 
         function handleScroll() {
             const windowHeight = window.innerHeight;

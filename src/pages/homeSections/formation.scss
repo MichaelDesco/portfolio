@@ -60,6 +60,13 @@
             img{
                 box-shadow: 1px 1px 3px black;
                 width: 14vw;
+                &:hover {
+                    width: 76vw;
+                    position: absolute;
+                    z-index: 999;
+                    top: 0;
+                    right: 0;
+                }
             }
             .cvDownload{
                 background-color: #E0FF4F;
@@ -74,8 +81,7 @@
     }
 }
 .objectif{
-    height: 30vh;
-    padding: 5vh 0;
+    height: 25vh;
     border-top: 8px solid #3abeff;
     border-bottom: 8px solid #3abeff;
     display: flex;

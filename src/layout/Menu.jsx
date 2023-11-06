@@ -6,16 +6,20 @@ import './menu.scss';
 const Menu = () => {
     const [isSticky, setIsSticky] = useState(false);
     const backToTopRef = useRef(null);
+    const btnContactRef = useRef(null);
 
     useEffect(() => {
         const backToTop = backToTopRef.current;
+        const btnContact = btnContactRef.current;
         const handleScroll = () => {
-            if (backToTop && window.scrollY > 100) { // Modifiez 100 selon votre préférence
+            if (backToTop && btnContact && window.scrollY > 100) { // Modifiez 100 selon votre préférence
                 setIsSticky(true);
-                backToTop.style.display = "block"
+                backToTop.style.display = "block";
+                btnContact.style.display = "block"
             } else if (backToTop) {
                 setIsSticky(false);
-                backToTop.style.display = "none"
+                backToTop.style.display = "none";
+                btnContact.style.display = "none"
             }
         };
 
@@ -44,6 +48,7 @@ const Menu = () => {
                     <li><a href="#realisations" className="btnMenu">Réalisations</a></li>
                     <li><a href="#langages" className="btnMenu">Langages</a></li>
                     <li><a href="#technologies" className="btnMenu">Technologies</a></li>
+                    <li ref={btnContactRef}><a href="#contact" className='btnMenu'>Contactez-moi</a></li>
                     <FontAwesomeIcon icon={faArrowUp} ref={backToTopRef} className='fa-solid fa-beat-fade' />
                 </ul>
             </nav>

@@ -1,4 +1,14 @@
 @font-face {
+    font-family: "Rubik";
+    src: url("../public/fonts/Rubik/RubikMoonrocks-Regular.ttf");
+}
+h2{
+    font-family: "Rubik", monospace;
+    color: #E9C46A;
+    font-size: 2.5rem;
+    font-weight: lighter;
+}
+@font-face {
     font-family: "Londrina";
     src: url("../public/fonts/Londrina_Solid/LondrinaSolid-Regular.ttf");
 }
@@ -6,6 +16,10 @@ h1, .btnContact, .btnMenu, h3, h4, .titleTransition, .autorTransition .cvDownloa
     font-family: "Londrina";
     text-shadow: 1px 1px 3px black;
     letter-spacing: 1.8px;
+}
+h1>span{
+    font-size: 2.5rem;
+    color: #E9C46A;
 }
 label{
     color: white;
@@ -27,7 +41,7 @@ h4{
     font-family: "Spartan";
     src: url("../public/fonts/League_Spartan/LeagueSpartan-VariableFont_wght.ttf");
 }
-h2, p, .langage, .transitionParagraph{
+p, .langage, .transitionParagraph{
     font-family: "Spartan";
 }
 
@@ -35,6 +49,21 @@ h2, p, .langage, .transitionParagraph{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+.btnContact{
+    height: 5vh;
+    position: absolute;
+    right: 10vw;
+    padding: 0.3rem 0.5rem;
+    border: 1px solid #E0FF4F;
+    border-radius: 0.1rem;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: large;
+    background-color: #3abeff;
+    color: white;
+    overflow: hidden;
 }
 
 

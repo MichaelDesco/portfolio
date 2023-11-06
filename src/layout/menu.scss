@@ -1,11 +1,11 @@
 .navHeader {
     position: relative;
-    height: 5vh;
+    height: 4vh;
     background-color: #E9C46A;
     box-shadow: 0 2px 5px black;
 
     ul {
-        height: 5vh;
+        height: 4vh;
         display: flex;
         align-items: center;
         justify-content: space-evenly;
@@ -14,10 +14,24 @@
 
         li {
             .btnMenu {
+                display: flex;
+                justify-content: center;
                 text-decoration: none;
                 font-weight: bolder;
                 font-size: 1.4rem;
                 color: white;
+                transition: font-size 1s; /* Ajout d'une transition pour un changement de taille plus fluide */
+                width: 10rem;
+                text-align: center;
+                white-space: nowrap;
+                &:hover {
+                    font-size: 2rem;
+                    padding-top: 2vh;
+                    transition: padding-top 0.3s;
+                }
+            }
+            .contactMenu{
+                position: static;
             }
         }
     }

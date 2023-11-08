@@ -1,4 +1,7 @@
 import './formation.scss';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faDownload } from "@fortawesome/free-solid-svg-icons";
+
 
 const Formation = () => {
     return (
@@ -33,7 +36,9 @@ const Formation = () => {
                     <div className='cvParcours'>
                         <h3>Mon CV</h3>
                         <img src="./images/cvDescoMike.jpg" alt="" />
-                        <a className='cvDownload' href="https://drive.google.com/file/d/1w_7mOD_LHHPsxSlnakHR5259tlC4ZMir/view?usp=drive_link">Télécharger</a>
+                        <a className='cvDownload' href="https://drive.google.com/u/0/uc?id=1ahgW4xbDQHhEIzA7JMLSv6hLDyHg95EQ&export=download">
+                            <FontAwesomeIcon className='fa-download' icon={faDownload} />
+                        </a>
                     </div>
                 </div>
             </div>

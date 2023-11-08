@@ -9,10 +9,9 @@ const Profile = () => {
             <div className="profile">
                 <div className='apropos'>
                     <h3>A propos de moi</h3>
-                    <p>En reconversion depuis septembre 2022 dans le développement web.</p>
-                    <p>Je me suis formé à La Piscine à Mérignac, Gironde où j'ai acquis les bases pour concevoir des sites web visuellement attrayants, fonctionnels et gérer les données.</p>
-                    <p>Ma première expérience a été le développement d'un site de gestion comptable, confirmant ma capacité d'adaptation humaine et technique.</p>
-                    <p>Bien que débutant, ma passion pour ce métier me pousse à relever de nouveaux défis et à explorer le monde numérique avec enthousiasme.</p>
+                    <p>Enthousiastes à l'idée de faire du développement ma profession, j'ai entamé une formation à La Piscine à Mérignac en Gironde où j'ai acquis les bases pour concevoir des sites web fonctionnels intégrants des données et aux visuels attrayants.</p>
+                    <p>A la suite de la formation j'ai saisi l'opportunité de participé aux développement d'un projet de génération d'écritures comptables pour la société Avista à Bordeaux. <br/>J'ai pu y appliqué ce que j'avais appris sur des technologies différentes confirmant ma capacité d'adaptation humaine et technique.</p>
+                    <p>Bien que débutant, ma passion pour ce métier est un réel épanouissement qui me pousse à m'investir pleinement afin d'atteindre mes objectifs.</p>
                 </div>
             </div>
             <div className="actuellement">

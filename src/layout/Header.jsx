@@ -1,7 +1,7 @@
 import "./header.scss";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin , faGithub, faDiscord } from "@fortawesome/free-brands-svg-icons";
-import { faUsers } from "@fortawesome/free-solid-svg-icons";
+import { faUsers, faFeatherPointed } from "@fortawesome/free-solid-svg-icons";
 
 
 const Header = () => {
@@ -19,7 +19,10 @@ const Header = () => {
                     </div>
                     <h2>DÉVELOPPEUR D'APPLICATION WEB</h2>
                 </div>
-                <a href="#contact" className="btnContact">Contactez-moi</a>
+                <a href="#contact" className="btnContact">
+                    <p>Contactez-moi</p>
+                    <FontAwesomeIcon className="fa-feather-pointed" icon={faFeatherPointed} />
+                </a>
             </div>
         </>
     )

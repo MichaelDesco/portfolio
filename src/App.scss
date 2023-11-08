@@ -7,6 +7,7 @@ h2{
     color: #E9C46A;
     font-size: 2.5rem;
     font-weight: lighter;
+    text-shadow: 5px 5px 2px black;
 }
 @font-face {
     font-family: "Londrina";
@@ -14,7 +15,7 @@ h2{
 }
 h1, .btnContact, .btnMenu, h3, h4, .titleTransition, .autorTransition .cvDownload, .footerLink, button, label, .btnBackCard{
     font-family: "Londrina";
-    text-shadow: 1px 1px 3px black;
+    text-shadow: 2px 2px 3px black;
     letter-spacing: 1.8px;
 }
 h1>span{
@@ -31,7 +32,7 @@ h3,h4, .titleTransition{
     color: #52796F;
 }
 h3{
-    font-size: 1.5rem;
+    font-size: 1.7rem;
 }
 h4{
     font-size: 2rem;
@@ -52,18 +53,32 @@ p, .langage, .transitionParagraph{
 }
 
 .btnContact{
-    height: 5vh;
+    display: flex;
     position: absolute;
-    right: 10vw;
-    padding: 0.3rem 0.5rem;
-    border: 1px solid #E0FF4F;
-    border-radius: 0.1rem;
+    right: 2vw;
+    top: 3vh;
     text-decoration: none;
-    font-weight: bolder;
-    font-size: large;
-    background-color: #3abeff;
-    color: white;
     overflow: hidden;
+    font-size: 1.5rem;
+    p{
+        // border-bottom: 2px solid #3abeff;
+        font-weight: bolder;
+        color: #E0FF4F;
+        &:hover{
+            color: #3abeff;
+            border-bottom: 3px solid #E0FF4F;
+        }
+    }
+    .fa-feather-pointed{
+        color: #3abeff;
+        
+    }
+    &:hover{
+        font-size: 1.55rem;
+        .fa-feather-pointed{            
+            color: #E0FF4F;
+        }
+    }
 }
 
 

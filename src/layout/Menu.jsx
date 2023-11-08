@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowUp } from '@fortawesome/free-solid-svg-icons';
+import { faHome } from '@fortawesome/free-solid-svg-icons';
 import './menu.scss';
 
 const Menu = () => {
@@ -12,13 +12,17 @@ const Menu = () => {
         const backToTop = backToTopRef.current;
         const btnContact = btnContactRef.current;
         const handleScroll = () => {
-            if (backToTop && btnContact && window.scrollY > 100) { // Modifiez 100 selon votre préférence
+            if (backToTop && btnContact && window.scrollY > 200) {
                 setIsSticky(true);
                 backToTop.style.display = "block";
-                btnContact.style.display = "block"
+                btnContact.style.display = "block";
             } else if (backToTop) {
                 setIsSticky(false);
                 backToTop.style.display = "none";
+                btnContact.style.display = "none";
+            } 
+
+            if (btnContact && window && window.scrollY > 3400) {
                 btnContact.style.display = "none"
             }
         };
@@ -26,9 +30,9 @@ const Menu = () => {
         const handleBackToTopClick = () => {
             window.scrollTo({
                 top: 0,
-                behavior: 'smooth', // Pour une animation de défilement en douceur
+                behavior: 'smooth',
             });
-        }
+        };
 
         window.addEventListener('scroll', handleScroll);
         backToTop.addEventListener('click', handleBackToTopClick);
@@ -42,14 +46,14 @@ const Menu = () => {
     return (
         <>
             <nav className={`navHeader${isSticky ? ' sticky' : ''}`}>
+                <FontAwesomeIcon icon={faHome} ref={backToTopRef} className='fa-home fa-beat' />
                 <ul>
-                    <li><a href="#profile" className="btnMenu">Profile</a></li>
-                    <li><a href="#formation" className="btnMenu">Formation</a></li>
+                    <li><a href="#profil" className="btnMenu">Profil</a></li>
+                    <li><a href="#formation" className="btnMenu">Formations</a></li>
                     <li><a href="#realisations" className="btnMenu">Réalisations</a></li>
                     <li><a href="#langages" className="btnMenu">Langages</a></li>
                     <li><a href="#technologies" className="btnMenu">Technologies</a></li>
-                    <li ref={btnContactRef}><a href="#contact" className='btnMenu'>Contactez-moi</a></li>
-                    <FontAwesomeIcon icon={faArrowUp} ref={backToTopRef} className='fa-solid fa-beat-fade' />
+                    <li ref={btnContactRef}><a href="#contact" className='btnMenu'>Contact</a></li>
                 </ul>
             </nav>
         </>
@@ -57,5 +61,3 @@ const Menu = () => {
 };
 
 export default Menu;
-
-

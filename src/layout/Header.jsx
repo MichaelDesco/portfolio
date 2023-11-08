@@ -11,11 +11,11 @@ const Header = () => {
                 <img src="../images/avatar.png" alt="" />
                 <div className="headerTitle">
                     <div className="headerNameLink">
-                        <h1><span>Bonjour, </span>je suis Descorcier Michaël</h1>
-                        <a href="https://www.linkedin.com/in/michael-descorcier-40568a84/"><FontAwesomeIcon icon={faLinkedin} /></a>
-                        <a href="https://github.com/MichaelDesco"><FontAwesomeIcon icon={faGithub} /></a>
-                        <a href="https://discord.gg/xCNP9ZKe"><FontAwesomeIcon icon={faDiscord} /></a>
-                        <a href="https://teams.live.com/l/invite/FEA02ekIpBnM_IatwE"><FontAwesomeIcon icon={faUsers} /></a>
+                        <h1><span>Bonjour,  </span> je suis Descorcier Michaël</h1>
+                        <a className="iconSocial" href="https://www.linkedin.com/in/michael-descorcier-40568a84/"><FontAwesomeIcon icon={faLinkedin} /></a>
+                        <a className="iconSocial" href="https://github.com/MichaelDesco"><FontAwesomeIcon icon={faGithub} /></a>
+                        <a className="iconSocial" href="https://discord.gg/xCNP9ZKe"><FontAwesomeIcon icon={faDiscord} /></a>
+                        <a className="iconSocial" href="https://teams.live.com/l/invite/FEA02ekIpBnM_IatwE"><FontAwesomeIcon icon={faUsers} /></a>
                     </div>
                     <h2>DÉVELOPPEUR D'APPLICATION WEB</h2>
                 </div>

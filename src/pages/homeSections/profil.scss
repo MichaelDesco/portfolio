@@ -20,18 +20,43 @@
         padding-right: 4vw;
         background-color: white;
         height: 50vh;
-        width: 70vw;
+        width: 76vw;
+        @media screen and (max-width:1023px){
+            height: 60vh;
+            width: 80vw;
+        }
+        @media screen and (max-width:767px){
+            height: 65vh;
+            width: 85vw;
+        }
+        @media screen and (max-width:279px){
+            width: 90vw;
+        }
         h3{
             position: absolute;
             top: 6vh;
             left: 3vw;
+            @media screen and (max-width:1023px){
+                top: 4vh;
+            }
+            @media screen and (max-width:767px){
+                top: 3vh;
+            }
+            @media screen and (max-width:479px){
+                top: 2vh;
+            }
+            @media screen and (max-width:279px){
+                top: 1vh;
+                font-size: 1.2rem;
+            }
         }
         p{
             padding: 0.5vh 1vw;
-            font-weight: bold;
-            font-size: 1.3rem;
-            text-shadow: 0.5px 0.5px 0.5px #E0FF4F;
+            font-size: 1.2rem;
             text-align: justify;
+            @media screen and (max-width:479px){
+                font-size: 0.95rem;
+            }
         }
     }
 }

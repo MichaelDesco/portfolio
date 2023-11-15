@@ -1,49 +1,159 @@
 .navHeader {
+    width: 100vw;
     position: relative;
-    height: 4vh;
     background-color: #E9C46A;
     box-shadow: 0 2px 5px black;
+    display: flex;
+    flex-direction: column;
 
     .fa-home{
-        position: absolute;
-        left: 2.5%;
-        top: 25%;
+        display: none;
         font-size: 1rem;
         text-shadow: 2px 2px 3px black;
         background-color: #3abeff;
         color: white;
-        padding: 6px;
+        padding: 3px;
         border-radius: 3px;
         cursor: pointer;
+
+        @media screen and (max-width:1000px) {
+            font-size: 0.8rem;
+        }
+        @media screen and (max-width:800px) {
+            font-size: 0.6rem;
+        }
     }
     ul {
-        height: 4vh;
+        width: 100%;
         display: flex;
-        align-items: center;
-        justify-content: space-evenly;
+        justify-content: space-around;
         list-style-type: none;
-        margin-left: 0;
-        li {
+        margin-right: auto;
+        margin-left: auto;
+        @media screen and (max-width:575px) {
+            flex-direction: column;
+            
+        }
+        li:first-of-type{
+            width: 3vw;
+            padding: 1%;
+            @media screen and (max-width:575px) {
+            }
+            .fa-home{
+                font-size: 1rem;
+            }
+        }
+        li{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 4vh;
             .btnMenu {
-                display: flex;
-                justify-content: center;
+                width: 100%;
                 text-decoration: none;
                 font-weight: bolder;
                 font-size: 1.4rem;
                 color: white;
                 transition: font-size 1s; /* Ajout d'une transition pour un changement de taille plus fluide */
-                width: 10rem;
                 text-align: center;
                 white-space: nowrap;
+                @media screen and (max-width:1023px){
+                    font-size: 1.1rem;
+                }
                 &:hover {
-                    font-size: 2rem;
-                    padding-top: 2vh;
+                    font-size: 1.6rem;
+                    padding-top: 0.5vh;
                     transition: padding-top 0.3s;
+                    @media screen and (max-width:1023px){
+                        font-size: 1.2rem;
+                    }
+                    @media screen and (max-width:600px){
+                        font-size: 1.2rem;
+                        padding-top: 0;
+                    }
+                }
+                .fa-feather-pointed{
+                    color: #3abeff;                    
+                    &:hover{
+                        font-size: 1.55rem;
+                        .fa-feather-pointed{            
+                            color: #E0FF4F;
+                        }
+                    }
                 }
             }
-            .contactMenu{
-                position: static;
+            @media screen  and (max-width:575px) {
+                display: none;
             }
+        }
+        &.open {
+            li:first-of-type{
+                width: 3vw;
+                padding: 1%;
+                @media screen and (max-width:575px) {
+                    position: absolute;
+                }
+                .fa-home{
+                    font-size: 1rem;
+                }
+            }
+            li{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 4vh;
+                .btnMenu {
+                    width: 100%;
+                    text-decoration: none;
+                    font-weight: bolder;
+                    font-size: 1.4rem;
+                    color: white;
+                    transition: font-size 1s; /* Ajout d'une transition pour un changement de taille plus fluide */
+                    text-align: center;
+                    white-space: nowrap;
+                    @media screen and (max-width:1023px){
+                        font-size: 1.1rem;
+                    }
+                    &:hover {
+                        font-size: 1.6rem;
+                        padding-top: 0.5vh;
+                        transition: padding-top 0.3s;
+                        @media screen and (max-width:1023px){
+                            font-size: 1.2rem;
+                        }
+                        @media screen and (max-width:600px){
+                            font-size: 1.2rem;
+                            padding-top: 0;
+                        }
+                    }
+                    .fa-feather-pointed{
+                        color: #3abeff;                    
+                        &:hover{
+                            font-size: 1.55rem;
+                            .fa-feather-pointed{            
+                                color: #E0FF4F;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .fa-bars{
+        color: white;
+        background: #3abeff;
+        font-size: 1.4rem;
+        padding: 1px 3px;
+        border: 1px solid #3abeff;
+        border-radius: 5px;
+        position: absolute;
+        right: 1%;
+        top: 5%;
+        display: none;
+        @media screen and (max-width:575px) {
+            display: block;
         }
     }
 
@@ -64,3 +174,5 @@
         z-index: 100;
     }
 }
+
+

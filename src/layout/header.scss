@@ -1,42 +1,87 @@
 .headerTop{
-    height: 25vh;
+    padding: 0.5vh 0;
     background-color: #52796F;
     display: flex;
     align-items: center;
     position: relative;
     color: white;
 
-    img{
+    .profil-picture{
         height: 24vh;
-        padding-left: 10vw;
+        padding-left: 1vw;
         margin-right: 2vw;
-
+        @media screen and (max-width: 800px){
+            display: none;
+        }
+    }
+    .laptop-picture{
+        height: 15vh;
+        position: absolute;
+        right: 0.5vw;
+        top: 1.5vh;
+        @media screen and (max-width: 800px) {
+            height: 12vh;
+        }
+        @media screen and (max-width: 600px) {
+            height: 8vh;
+        }
+        @media screen and (max-width: 400px) {
+            display: none;
+        }
     }
     .headerNameLink{
         display: flex;
         align-items: center;
-        margin-bottom: 2vh;
+        margin-bottom: 3vh;
+        @media screen and (max-width: 800px) {
+            margin-bottom: 2vh;
+        }
+        @media screen and (max-width: 600px) {
+            margin-bottom: 1.5vh;
+        }
+        @media screen and (max-width: 400px) {
+            margin-bottom: 1vh;
+        }
         a{
-            display: flex;
-            justify-content: center;
-            width: 2.8vw;
-            .fa-linkedin, .fa-github, .fa-discord, .fa-users{
+            align-self: flex-end;
+            height: 3vh;
+            margin: 0 0.5vw 1vh;
+            .fa-linkedin, .fa-github, .fa-discord {
                 font-size: 1.5rem;
-                margin-left: 1vw;
                 color: #3abeff;
                 &:hover{
                     color: #E0FF4F;
                     font-size: 1.7rem;
                 }
+                @media screen and (max-width: 800px) {
+                    font-size: 1.4rem;
+                    &:hover{
+                        color: #E0FF4F;
+                        font-size: 1.6rem;
+                    }
+                }
+                @media screen and (max-width: 600px) {
+                    font-size: 1.3rem;
+                    &:hover{
+                        color: #E0FF4F;
+                        font-size: 1.5rem;
+                    }
+                }
+                @media screen and (max-width: 400px) {
+                    font-size: 1.2rem;
+                    &:hover{
+                        color: #E0FF4F;
+                        font-size: 1.4rem;
+                    }
+                }
             }
         }
     }
-    
     h2 {
         overflow: hidden;
         white-space: nowrap;
         position: relative;
-        animation: typing 1s steps(24);
+        animation: typing 2s steps(24);
     }
 
     @keyframes typing {
@@ -68,4 +113,3 @@
       }
     }
 }
-    

@@ -1,47 +1,41 @@
 .navHeader {
-    width: 100vw;
+
     position: relative;
     background-color: #E9C46A;
     box-shadow: 0 2px 5px black;
     display: flex;
     flex-direction: column;
 
-    .fa-home{
+    #fa-home{
         display: none;
-        font-size: 1rem;
+        position: absolute;
+        z-index: 999;
+        left: 1vw;
+        top: 0.5vh;
         text-shadow: 2px 2px 3px black;
         background-color: #3abeff;
         color: white;
+        font-size: 1rem;
         padding: 3px;
         border-radius: 3px;
         cursor: pointer;
 
-        @media screen and (max-width:1000px) {
-            font-size: 0.8rem;
+        @media screen and (max-width:1277px) {
+            font-size: 0.9rem;
         }
-        @media screen and (max-width:800px) {
-            font-size: 0.6rem;
-        }
+
     }
     ul {
+        position: relative;
         width: 100%;
         display: flex;
         justify-content: space-around;
         list-style-type: none;
         margin-right: auto;
         margin-left: auto;
-        @media screen and (max-width:575px) {
+        @media screen and (max-width:767px) {
             flex-direction: column;
-            
-        }
-        li:first-of-type{
-            width: 3vw;
-            padding: 1%;
-            @media screen and (max-width:575px) {
-            }
-            .fa-home{
-                font-size: 1rem;
-            }
+            min-height: 4vh;
         }
         li{
             width: 100%;
@@ -83,21 +77,11 @@
                     }
                 }
             }
-            @media screen  and (max-width:575px) {
+            @media screen  and (max-width:767px) {
                 display: none;
             }
         }
         &.open {
-            li:first-of-type{
-                width: 3vw;
-                padding: 1%;
-                @media screen and (max-width:575px) {
-                    position: absolute;
-                }
-                .fa-home{
-                    font-size: 1rem;
-                }
-            }
             li{
                 width: 100%;
                 display: flex;
@@ -113,8 +97,12 @@
                     transition: font-size 1s; /* Ajout d'une transition pour un changement de taille plus fluide */
                     text-align: center;
                     white-space: nowrap;
+                    cursor: pointer;
                     @media screen and (max-width:1023px){
                         font-size: 1.1rem;
+                    }
+                    @media screen and (max-width:767px){
+                        font-size: 1rem;
                     }
                     &:hover {
                         font-size: 1.6rem;
@@ -123,13 +111,16 @@
                         @media screen and (max-width:1023px){
                             font-size: 1.2rem;
                         }
-                        @media screen and (max-width:600px){
-                            font-size: 1.2rem;
+                        @media screen and (max-width:767px){
+                            font-size: 1.1rem;
                             padding-top: 0;
                         }
                     }
                     .fa-feather-pointed{
-                        color: #3abeff;                    
+                        color: #3abeff;
+                        @media screen and (max-width: 767px) {
+                            display: none;
+                        }                    
                         &:hover{
                             font-size: 1.55rem;
                             .fa-feather-pointed{            
@@ -144,15 +135,16 @@
     .fa-bars{
         color: white;
         background: #3abeff;
-        font-size: 1.4rem;
+        font-size: 1.2rem;
         padding: 1px 3px;
         border: 1px solid #3abeff;
         border-radius: 5px;
         position: absolute;
         right: 1%;
-        top: 5%;
+        margin-top: 0.5vh;
         display: none;
-        @media screen and (max-width:575px) {
+        cursor: pointer;
+        @media screen and (max-width:767px) {
             display: block;
         }
     }

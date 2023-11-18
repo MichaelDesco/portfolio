@@ -7,22 +7,30 @@ const Header = () => {
     return (
         <>
             <div className="headerTop">
-                <img className="profil-picture" src="../images/avatar.png" alt="" />
-                <img className="laptop-picture" src="../images/sticker.png" alt="" />
-                <div className="headerTitle">
-                    <div className="headerNameLink">
-                        <h1><span>Bonjour, </span>je suis Descorcier Michaël</h1>
-                        <a className="iconSocial" href="https://www.linkedin.com/in/michael-descorcier-40568a84/">
-                            <FontAwesomeIcon className="fa-linkedin" icon={faLinkedin} />
-                        </a>
-                        <a className="iconSocial" href="https://github.com/MichaelDesco">
-                            <FontAwesomeIcon className="fa-github" icon={faGithub} />
-                        </a>
-                        <a className="iconSocial" href="https://discord.gg/xCNP9ZKe">
-                            <FontAwesomeIcon className="fa-discord" icon={faDiscord} />
-                        </a>
+                <div className="container-profil">
+                    <div className="container-profil-picture">
+                        <img className="profil-picture" src="../images/avatar.png" alt="" />
+                    </div> 
+                    <div className="header-title">
+                        <div className="headerNameLink">
+                            <h1><span>Bonjour, </span>je suis Descorcier Michaël</h1>
+                            <div className="container-link">
+                                <a className="iconSocial" href="https://www.linkedin.com/in/michael-descorcier-40568a84/">
+                                    <FontAwesomeIcon className="fa-linkedin" icon={faLinkedin} />
+                                </a>
+                                <a className="iconSocial" href="https://github.com/MichaelDesco">
+                                    <FontAwesomeIcon className="fa-github" icon={faGithub} />
+                                </a>
+                                <a className="iconSocial" href="https://discord.gg/xCNP9ZKe">
+                                    <FontAwesomeIcon className="fa-discord" icon={faDiscord} />
+                                </a>
+                            </div>
+                        </div>
+                        <h2>DÉVELOPPEUR D'APPLICATION WEB</h2>
                     </div>
-                    <h2>DÉVELOPPEUR D'APPLICATION WEB</h2>
+                </div>
+                <div className="container-laptop-picture">
+                    <img className="laptop-picture" src="../images/sticker.png" alt="" />
                 </div>
             </div>
         </>

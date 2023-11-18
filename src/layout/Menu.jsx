@@ -51,8 +51,8 @@ const Menu = () => {
     return (
         <>
             <nav className={`navHeader${isSticky ? ' sticky' : ''}`}>
+                <FontAwesomeIcon icon={faHome} ref={backToTopRef} id='fa-home' className='fa-home fa-beat' />
                 <ul className={isMenuOpen ? 'open' : ''}>
-                    <li><FontAwesomeIcon icon={faHome} ref={backToTopRef} className='fa-home fa-beat' /></li>
                     <li><a href="#formation" className="btnMenu">Formations</a></li>
                     <li><a href="#realisations" className="btnMenu">Réalisations</a></li>
                     <li><a href="#langages" className="btnMenu">Langages</a></li>

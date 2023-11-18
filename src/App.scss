@@ -1,95 +1,13 @@
 @font-face {
-    font-family: "Rubik";
-    src: url("../public/fonts/Rubik/RubikMoonrocks-Regular.ttf");
-}
-h2{
-    font-family: "Rubik", monospace;
-    color: #E9C46A;
-    font-size: 2.5rem;
-    font-weight: lighter;
-    text-shadow: 1px 1px 2px black;
-    word-spacing: 1rem;
-    @media screen and (max-width: 1400px){
-       font-size: 2.3rem;     
-    }
-    @media screen and (max-width: 1200px) {
-        font-size: 2.1rem;
-    }
-    @media screen and (max-width: 1000px) {
-        font-size: 1.9rem;
-    }
-    @media screen and (max-width: 800px) {
-        padding-left: 2vw;
-        font-size: 1.7rem;
-        white-space: pre-wrap;
-    }
-    @media screen and (max-width: 700px) {
-        padding-left: 1vw;
-        font-size: 1.3rem;
-    }
-    @media screen and (max-width: 600px) {
-        padding-left: 1vw;
-        font-size: 1.2rem;
-    }
-    @media screen and (max-width: 500px) {
-        padding-left: 1vw;
-        font-size: 1.1rem;
-    }
-    @media screen and (max-width: 400px) {
-        padding-left: 1vw;
-        font-size: 1rem;
-    }
-}
-@font-face {
     font-family: "Londrina";
     src: url("../public/fonts/Londrina_Solid/LondrinaSolid-Regular.ttf");
 }
-h1, .btnContact, .btnMenu, h3, h4, .titleTransition, .autorTransition .cvDownload, .footerLink, button, label, .btnBackCard{
+h1, .btnContact, .btnMenu, h3, h4, .titleTransition, .autorTransition .cvDownload, .footerLink, button, label{
     font-family: "Londrina";
     text-shadow: 2px 2px 3px black;
     letter-spacing: 1.8px;
 }
-h1{ 
-    word-spacing: 0.1rem;
-    margin-right: 2vw;
-    @media screen and (max-width: 1400px){
-        font-size: 2.1rem;     
-    }
-    @media screen and (max-width: 1200px) {
-         font-size: 1.9rem;
-    }
-    @media screen and (max-width: 1000px) {
-         font-size: 1.6rem;
-         display: flex;
-         flex-direction: column;
-    }
-    @media screen and (max-width: 800px) {
-         font-size: 1.3rem;
-         padding-left: 2vw;
-    }
-    @media screen and (max-width: 600px) {
-        font-size: 1rem;
-    }
-}
-h1>span{
-    font-size: 2.5rem;
-    color: #E9C46A;
-    @media screen and (max-width: 1400px){
-        font-size: 2.3rem;     
-    }
-    @media screen and (max-width: 1200px) {
-        font-size: 2.1rem;
-    }
-    @media screen and (max-width: 1000px) {
-        font-size: 1.8rem;
-    }
-    @media screen and (max-width: 800px) {
-        font-size: 1.5rem;
-    }
-    @media screen and (max-width: 600px) {
-        font-size: 1rem;
-    }
-}
+
 label{
     color: white;
 }
@@ -104,6 +22,21 @@ h3{
 }
 h4{
     font-size: 2rem;
+    @media screen and (max-width: 1277px){
+        font-size: 1.9rem;              
+    }
+    @media screen and (max-width: 1023px){
+        font-size: 1.8rem;    
+    }
+    @media screen and (max-width: 767px){
+        font-size: 1.7rem;    
+    }
+    @media screen and (max-width: 479px){
+        font-size: 1.6rem;    
+    }
+    @media screen and (max-width: 279px){
+        font-size: 1.5rem;    
+    }
 }
 
 @font-face {

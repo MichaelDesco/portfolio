@@ -1,6 +1,6 @@
 .realisations {
     position: relative;
-    height: 70vh;
+    min-height: 70vh;
     background-image: url(../../../public/images/colorkitreverse.png);
     background-position: center;
     background-size: cover;
@@ -9,7 +9,7 @@
 
     h3 {
         position: absolute;
-        top: 6.5vh;
+        top: 6vh;
         left: 6vw;
         font-size: 2.5rem;
         .letter {
@@ -32,29 +32,38 @@
         position: relative;
         margin-left: auto;
         margin-right: auto;
-        height: 50vh;
-        width: 90vw;
+        min-height: 50vh;
         display: flex;
         justify-content: space-around;
         align-items: center;
         flex-wrap: wrap;
 
         .project {
-            height: 35vh;
-            width: 20vw;
+            height: 38vh;
+            width: 22vw;
             border-radius: 15px;
             background-color: white;
             transition: transform 0.6s ease;
             transform-style: preserve-3d;
             position: relative;
-
+            @media screen and (max-width: 1023px){
+                min-width: 40vw; 
+                margin-bottom: 4vh;   
+            }
+            @media screen and (max-width: 767px){
+                height: 40vh;
+                min-width: 65vw;
+            }
+            @media screen and (max-width: 479px){
+                min-width: 80vw;
+            }
             &:hover {
                 transform: rotateY(180deg);
                 animation: flip 0.6s ease-in-out;
             }
 
             .cardFront {
-                box-shadow: 1px 1px 8px black;
+                box-shadow: 1px 1px 2px black;
                 border-radius: 15px;
                 position: absolute;
                 display: flex;
@@ -65,14 +74,26 @@
                 backface-visibility: hidden;
 
                 img {
-                    width: 12vw;
+                    width: 15vw;
                     margin-left: auto;
                     margin-right: auto;
+                    @media screen and (max-width: 1023px){
+                        width: 25vw;
+                    }
+                    @media screen and (max-width: 767px){
+                        width: 40vw;
+                    }
+                    @media screen and (max-width: 479px){
+                        width: 55vw;
+                    }
+                    @media screen and (max-width: 279px){
+                        width: 70vw;
+                    }
                 }
             }
 
             .cardBack {
-                box-shadow: 1px 1px 8px black;
+                box-shadow: 1px 1px 2px black;
                 border-radius: 15px;
                 position: absolute;
                 display: flex;
@@ -90,7 +111,7 @@
                     margin-left: auto;
                     margin-right: auto;
                 }
-                .btnBlackCard{
+                .btnBackCard{
                     text-decoration: none;
                     
                 }

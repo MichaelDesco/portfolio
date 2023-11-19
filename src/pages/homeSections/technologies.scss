@@ -1,42 +1,77 @@
 .technologies{
     position: relative;
-    height: 70vh;
+    min-height: 70vh;
     background-image: url(../../../public/images/colorkitreverse.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    h3{
+      padding: 5vh 0 0;
+      @media screen and (max-width: 767px){
+        text-align: center;
+      }
+    }
     .technologieLv{
-        // width: 7%;
-        height: 48vh;
+        height: 52vh;
         display: flex;
         flex-direction: column;
+        align-items: center;
         flex-wrap: wrap;
-        // justify-content: space-around;
-        padding-top: 4vh;
-        padding-right: 2vw;
-        h3{
-            position: absolute;
-            top: 7vh;
-            left: 6vw;
-            font-size: 2rem;
+        padding: 1vh 1vw 4vh 1vw;
+        @media screen and (max-width: 1023px){
+          height: 66vh;
+          padding: 1vh 1vw 6vh 1vw;
+        }
+        @media screen and (max-width: 767px){
+          height: auto;
+          padding: 1vh 1vw 10vh 1vw;
         }
         .technologie {
           padding-top: 3vh;
           position: relative;
           display: flex;
-
+          flex-wrap: wrap;
 
           .logoTechno {
+            position: relative;
             display: flex;
             justify-content: center;
             align-items: flex-end;
             height: 8vh;
             width:8vw;
+            @media screen and (max-width: 1277px){
+              width: 10vw;
+            }
+            @media screen and (max-width: 1023px){
+              width: 15vw;
+            }
+            @media screen and (max-width: 767px){
+              width: 20vw;
+            }
+            @media screen and (max-width: 479px){
+              width: 30vw;
+            }
+  
             img{
-              height: 7vh;
+              height: 75%;
+              width: auto;
+              @media screen and (max-width: 1277px){
+                height: 70%;
+              }
+              @media screen and (max-width: 1023px){
+                height: 65%;
+              }
+              @media screen and (max-width: 767px){
+                height: 60%;
+              }
+              @media screen and (max-width: 479px){
+                height: 50%;
+              }
+              @media screen and (max-width: 279px){
+                height: 40%;
+              }
             }
           }
 
@@ -51,6 +86,12 @@
               width: 20vw;
               position: relative;
               border-bottom: 15px solid white;
+              @media screen and (max-width: 1023px){
+                width: 30vw;
+              }
+              @media screen and (max-width: 767px){
+                width: 50vw;
+              }
           }
 
           p::before {
@@ -71,7 +112,7 @@
 }
 .transition3{
     position: relative;
-    height: 30vh;
+    min-height: 30vh;
     border-top: 8px solid #E0FF4F;
     border-bottom: 8px solid #E0FF4F;
     display: flex;
@@ -79,27 +120,39 @@
     justify-content: center;
     align-items: center;
     p{
-        font-size: 1.5rem;
-        line-height: 30px;
-        color: #52796F;
-        font-weight: bold;
-        text-shadow: 1px 1px 1px black;
+      line-height: 30px;
+      color: #52796F;
+      font-weight: bold;
+      text-shadow: 1px 1px 1px black;
+      @media screen and (max-width: 767px){
+        line-height: 20px;
+      }
         span{
             color: #E9C46A;
-            font-size: 1.7rem;
             position: absolute;
             bottom: 90%;
         }
     }
     .transition-paragraph {
-        width: 70%;
-        opacity: 0;
-         visibility: hidden;
-        position: absolute;
-        bottom: 50%;
-        right: 50%;
-        transform: translate(50%, 50%);
-        transition: opacity 2s ease-in-out;
+      width: 70%;
+      height: auto;
+      opacity: 0;
+      visibility: hidden;
+      position: absolute;
+      bottom: 50%;
+      right: 50%;
+      transform: translate(50%, 50%);
+      transition: opacity 2s ease-in-out;
+      @media screen and (max-width: 1023px){
+        width: 80%;
+      }
+      @media screen and (max-width: 767px){
+          width: 90%;
+      }
+      @media screen and (max-width: 479px){
+        width: 95%;
+    }
+
     }
     
     .transition-paragraph.show {
@@ -138,3 +191,5 @@
       }
     }
 }
+
+

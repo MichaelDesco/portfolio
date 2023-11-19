@@ -139,7 +139,9 @@ const Contact = () => {
                     </div>
                     <div className='contactSubmit'>
                         <input type="checkbox" name='authorisation' required='requis'/>
-                        <p>En soumettant ce formulaire, j'accepte que mes données personnelles soient utilisées pour me recontacter. Aucun autre traitement ne sera effectué avec mes informations. Pour connaître et exercer vos droits, veuillez consultez la <Link to='/' className="footerLink">Politique de confidentialité</Link>.</p>
+                        <p>En soumettant ce formulaire, j'accepte que mes données personnelles soient utilisées pour me     recontacter. Aucun autre traitement ne sera effectué avec mes informations. Pour connaître et exercer vos droits, veuillez consultez la 
+                            <Link to='/' className="footerLink">Politique de confidentialité</Link>.
+                        </p>
                         <input className='btnSendEmail' type="submit" value="Envoyez" />
                     </div>
                 </form>

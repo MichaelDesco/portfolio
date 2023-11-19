@@ -11,7 +11,6 @@
         position: absolute;
         top: 6vh;
         left: 6vw;
-        font-size: 2.5rem;
         .letter {
             position: relative;
             display: inline-block;
@@ -144,7 +143,7 @@
 
 .transition {
     position: relative;
-    height: 30vh;
+    min-height: 30vh;
     border-top: 8px solid #E0FF4F;
     border-bottom: 8px solid #E0FF4F;
     display: flex;
@@ -152,14 +151,15 @@
     justify-content: center;
     align-items: center;
     p{
-        font-size: 1.5rem;
         line-height: 30px;
         color: #52796F;
         font-weight: bold;
         text-shadow: 1px 1px 1px black;
+        @media screen and (max-width: 767px){
+            line-height: 20px;
+        }
         span{
             color: #E9C46A;
-            font-size: 1.7rem;
             position: absolute;
             bottom: 90%;
         }
@@ -167,12 +167,18 @@
     .transition-paragraph {
         width: 70%;
         opacity: 0;
-         visibility: hidden;
+        visibility: hidden;
         position: absolute;
         bottom: 50%;
         right: 50%;
         transform: translate(50%, 50%);
         transition: opacity 2s ease-in-out;
+        @media screen and (max-width: 1023px){
+            width: 80%;
+        }
+        @media screen and (max-width: 767px){
+            width: 90%;
+        }
     }
     
     .transition-paragraph.show {

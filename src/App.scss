@@ -18,7 +18,22 @@ h3,h4, .titleTransition{
     color: #52796F;
 }
 h3{
-    font-size: 1.7rem;
+    font-size: 1.9rem;
+    @media screen and (max-width: 1277px){
+        font-size: 1.8rem;              
+    }
+    @media screen and (max-width: 1023px){
+        font-size: 1.7rem;    
+    }
+    @media screen and (max-width: 767px){
+        font-size: 1.6rem;    
+    }
+    @media screen and (max-width: 479px){
+        font-size: 1.5rem;    
+    }
+    @media screen and (max-width: 279px){
+        font-size: 1.3rem;    
+    }
 }
 h4{
     font-size: 2rem;
@@ -45,6 +60,42 @@ h4{
 }
 p, .langage, .transitionParagraph{
     font-family: "Spartan";
+}
+.transition span, .transition2 span, .transition3 span{
+    font-size: 2rem;
+    @media screen and (max-width: 1277px){
+        font-size: 1.8rem;                
+    }
+    @media screen and (max-width: 1023px){
+        font-size: 1.6rem;
+    }
+    @media screen and (max-width: 767px){
+        font-size: 1.4rem;
+    }
+    @media screen and (max-width: 479px){
+        font-size: 1.2rem;
+    }
+    @media screen and (max-width: 279px){
+        font-size: 1rem;    
+    }
+}
+.transition p, .transition2 p, .transition3 p{
+    font-size: 1.8rem;
+    @media screen and (max-width: 1277px){
+        font-size: 1.6rem;                
+    }
+    @media screen and (max-width: 1023px){
+        font-size: 1.4rem;
+    }
+    @media screen and (max-width: 767px){
+        font-size: 1.2rem;
+    }
+    @media screen and (max-width: 479px){
+        font-size: 1rem;
+    }
+    @media screen and (max-width: 279px){
+        font-size: 0.8rem;    
+    }
 }
 
 *{

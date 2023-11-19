@@ -10,9 +10,6 @@ const Footer  = () => {
                 <nav>
                     <ul>
                         <li>
-                            <Link to='/' className="footerLink">Plan du site</Link>
-                        </li>
-                        <li>
                             <Link to= '/' className="footerLink">Mentions légales</Link>
                         </li>
                         <li>

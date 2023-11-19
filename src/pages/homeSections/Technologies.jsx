@@ -111,8 +111,8 @@ const Technologies = () => {
     return (
         <>
             <div className="technologies">
+                <h3>Environnement et outils de développement</h3>
                 <div className='technologieLv' id='technologieLv'>
-                    <h3>Environnement et outils de développement</h3>
                     {technologies.map((technologie, index) => (
                         <div className="technologie" key={index} id={`technologie-${index}`}>
                             <div className='logoTechno'>

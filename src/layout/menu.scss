@@ -83,13 +83,11 @@
         }
         &.open {
             li{
-                width: 100%;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 height: 4vh;
                 .btnMenu {
-                    width: 100%;
                     text-decoration: none;
                     font-weight: bolder;
                     font-size: 1.4rem;
@@ -162,7 +160,7 @@
     &.sticky {
         position: fixed;
         top: 0;
-        width: 100%;
+        width: 100vw;
         z-index: 100;
     }
 }

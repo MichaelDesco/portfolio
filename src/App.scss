@@ -2,6 +2,9 @@
     font-family: "Londrina";
     src: url("../public/fonts/Londrina_Solid/LondrinaSolid-Regular.ttf");
 }
+body{
+    width: 100%;
+}
 h1, .btnContact, .btnMenu, h3, h4, .titleTransition, .autorTransition .cvDownload, .footerLink, button, label{
     font-family: "Londrina";
     text-shadow: 2px 2px 3px black;
